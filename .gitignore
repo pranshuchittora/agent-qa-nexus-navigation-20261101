@@ -1,0 +1,16 @@
+node_modules
+dist
+dist-ssr
+.vite
+.pnpm-store
+.vercel
+*.zip
+*.local
+*.log
+.DS_Store
+.idea
+.vscode/*
+!.vscode/extensions.json
+
+.vercel
+.env*

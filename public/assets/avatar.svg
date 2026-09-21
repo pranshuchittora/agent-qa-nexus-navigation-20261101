@@ -1,0 +1,49 @@
+<svg width="640" height="640" viewBox="0 0 640 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="640" y2="640" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#131A33" />
+      <stop offset="0.55" stop-color="#0A0D18" />
+      <stop offset="1" stop-color="#05060A" />
+    </linearGradient>
+    <linearGradient id="mark" x1="150" y1="140" x2="500" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8FB4FF" />
+      <stop offset="0.45" stop-color="#B98CFF" />
+      <stop offset="1" stop-color="#5CEBC8" />
+    </linearGradient>
+    <radialGradient id="bloom" cx="0" cy="0" r="1" gradientTransform="translate(250 210) rotate(48) scale(360)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7AA2FF" stop-opacity="0.55" />
+      <stop offset="1" stop-color="#7AA2FF" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="bloom2" cx="0" cy="0" r="1" gradientTransform="translate(470 480) rotate(-140) scale(320)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4FE3C1" stop-opacity="0.4" />
+      <stop offset="1" stop-color="#4FE3C1" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#FFFFFF" stroke-opacity="0.05" />
+    </pattern>
+  </defs>
+
+  <rect width="640" height="640" fill="url(#bg)" />
+  <rect width="640" height="640" fill="url(#grid)" />
+  <rect width="640" height="640" fill="url(#bloom)" />
+  <rect width="640" height="640" fill="url(#bloom2)" />
+
+  <g stroke="#FFFFFF" stroke-opacity="0.12">
+    <circle cx="320" cy="320" r="212" fill="none" />
+    <circle cx="320" cy="320" r="258" fill="none" stroke-opacity="0.07" />
+  </g>
+
+  <text
+    x="320"
+    y="410"
+    text-anchor="middle"
+    font-family="'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', system-ui, sans-serif"
+    font-size="248"
+    font-weight="600"
+    fill="url(#mark)"
+  >张</text>
+
+  <g stroke="#FFFFFF" stroke-opacity="0.14">
+    <path d="M320 58v44M320 538v44M58 320h44M538 320h44" />
+  </g>
+</svg>

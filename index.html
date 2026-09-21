@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="张家诚（ZHANG JIACHENG）的全球科技与 AI 导航门户，精选国外主流 AI 工具、硬件科技、软件平台与开发者资源。"
+    />
+    <meta name="author" content="张家诚" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#05060a" />
+    <meta name="color-scheme" content="dark" />
+
+    <!-- 社交分享卡片：把 .env 里的 VITE_SITE_URL 换成正式域名后即为绝对地址 -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="张家诚 · 全球科技与 AI 导航门户" />
+    <meta property="og:title" content="张家诚 · 全球科技与 AI 导航门户" />
+    <meta
+      property="og:description"
+      content="收录国外主流的 AI 工具、硬件科技、软件平台与开发者资源，可搜索、可筛选、可切换视图的沉浸式导航门户。"
+    />
+    <meta property="og:image" content="%VITE_SITE_URL%/og-cover.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="张家诚 · 全球科技与 AI 导航门户" />
+    <meta
+      name="twitter:description"
+      content="收录国外主流的 AI 工具、硬件科技、软件平台与开发者资源，可搜索、可筛选、可切换视图的沉浸式导航门户。"
+    />
+    <meta name="twitter:image" content="%VITE_SITE_URL%/og-cover.png" />
+
+    <!-- 首屏 poster 提前拉取，避免视频区域先闪一下底色 -->
+    <link rel="preload" as="image" href="/assets/hero-poster.svg" fetchpriority="high" />
+    <title>张家诚 · 全球科技与 AI 导航门户</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

@@ -1,0 +1,212 @@
+.projects {
+  position: relative;
+}
+
+.projects__heading {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  max-width: 900px;
+}
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-6);
+}
+
+.project-card {
+  border-radius: var(--radius-xl);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturate));
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturate));
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  transition: transform var(--dur-base) var(--ease-out), border-color var(--dur-base) var(--ease-soft),
+    box-shadow var(--dur-base) var(--ease-out), background-color var(--dur-base) var(--ease-soft);
+}
+
+/* SpotlightCard 作为项目卡片容器时，接管其默认外观 */
+.project-card.card-spotlight {
+  padding: 0;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--glass-border);
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturate));
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturate));
+  overflow: hidden;
+  /* 与 SpotlightCard 的指针倾斜叠加，避免 hover 时把倾斜覆盖掉 */
+  transform: perspective(1100px) rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg));
+  transition: transform 300ms var(--ease-out), border-color var(--dur-base) var(--ease-soft),
+    box-shadow var(--dur-base) var(--ease-out), background-color var(--dur-base) var(--ease-soft);
+}
+
+.project-card.card-spotlight::before {
+  transition: opacity var(--dur-fast) var(--ease-soft);
+}
+
+.project-card.card-spotlight:hover::before,
+.project-card.card-spotlight:focus-within::before {
+  opacity: 0.4;
+}
+
+.project-card:hover {
+  transform: perspective(1100px) rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg))
+    translate3d(0, -10px, 0);
+  border-color: rgba(122, 162, 255, 0.42);
+  background: var(--glass-bg-hover);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 40px 90px -46px rgba(122, 162, 255, 0.95);
+  transition: transform var(--dur-spring) var(--ease-spring), border-color var(--dur-base) var(--ease-soft),
+    box-shadow var(--dur-base) var(--ease-out), background-color var(--dur-base) var(--ease-soft);
+}
+
+.project-card__link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-card__media {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: #07090f;
+}
+
+.project-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--dur-slow) var(--ease-out), filter var(--dur-slow) var(--ease-soft);
+}
+
+.project-card:hover .project-card__media img {
+  transform: scale(1.06);
+  filter: saturate(118%) brightness(1.04);
+}
+
+.project-card__scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(5, 6, 10, 0.1) 25%, rgba(5, 6, 10, 0.78) 100%);
+  opacity: 0.85;
+  transition: opacity var(--dur-base) var(--ease-soft);
+}
+
+.project-card:hover .project-card__scrim {
+  opacity: 1;
+}
+
+.project-card__meta {
+  position: absolute;
+  top: 20px;
+  left: 22px;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.project-card__year {
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  background: rgba(10, 12, 20, 0.6);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.project-card__enter {
+  position: absolute;
+  left: 22px;
+  bottom: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 10px 18px;
+  border-radius: var(--radius-pill);
+  font-size: 13px;
+  color: #06070c;
+  background: linear-gradient(120deg, #ffffff, #cfe0ff);
+  box-shadow: 0 18px 40px -20px rgba(255, 255, 255, 0.6);
+  opacity: 0;
+  transform: translate3d(0, 14px, 0);
+  transition: opacity var(--dur-base) var(--ease-out), transform var(--dur-base) var(--ease-out);
+}
+
+.project-card:hover .project-card__enter {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.project-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  padding: 30px clamp(22px, 2vw, 34px) 34px;
+  flex: 1;
+}
+
+.project-card__title {
+  font-size: clamp(20px, 1.5vw, 26px);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+
+.project-card__desc {
+  color: var(--color-text-soft);
+  font-size: 15px;
+}
+
+.project-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.project-card__tags li {
+  font-size: 12px;
+  padding: 5px 12px;
+  border-radius: var(--radius-pill);
+  background: rgba(122, 162, 255, 0.14);
+  border: 1px solid rgba(122, 162, 255, 0.26);
+  color: #dbe5ff;
+}
+
+.project-card__metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-5);
+  margin-top: auto;
+  padding-top: var(--space-5);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+.project-card__metrics li {
+  position: relative;
+  padding-left: 14px;
+}
+
+.project-card__metrics li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(120deg, var(--color-accent), var(--color-accent-3));
+}
+
+@media (max-width: 1080px) {
+  .projects__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

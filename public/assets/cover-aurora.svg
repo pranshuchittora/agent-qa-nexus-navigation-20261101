@@ -1,0 +1,46 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07121A" />
+      <stop offset="1" stop-color="#05060A" />
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="1" x2="1" y2="0">
+      <stop stop-color="#4FE3C1" />
+      <stop offset="0.5" stop-color="#7AA2FF" />
+      <stop offset="1" stop-color="#B07CFF" />
+    </linearGradient>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#4FE3C1" stop-opacity="0.4" />
+      <stop offset="1" stop-color="#4FE3C1" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="760" fill="url(#bg)" />
+  <g stroke="#FFFFFF" stroke-opacity="0.08">
+    <path d="M120 180h960M120 320h960M120 460h960M120 600h960" />
+  </g>
+  <g fill="#FFFFFF" fill-opacity="0.35">
+    <rect x="120" y="88" width="120" height="12" rx="6" />
+    <rect x="120" y="112" width="240" height="10" rx="5" fill-opacity="0.18" />
+  </g>
+  <path d="M120 600c80 0 96-190 176-190s96 96 176 96 96-190 176-190 96 132 176 132 96-64 176-64" stroke="url(#line)" stroke-width="4" fill="none" stroke-linecap="round" />
+  <path d="M120 600c80 0 96-190 176-190s96 96 176 96 96-190 176-190 96 132 176 132 96-64 176-64v212H120Z" fill="url(#area)" />
+  <g stroke="#FFFFFF" stroke-opacity="0.1" stroke-dasharray="6 10">
+    <path d="M120 300h960" />
+  </g>
+  <g fill="#05060A">
+    <circle cx="296" cy="410" r="13" fill="#4FE3C1" />
+    <circle cx="472" cy="506" r="13" fill="#7AA2FF" />
+    <circle cx="648" cy="316" r="13" fill="#B07CFF" />
+    <circle cx="1000" cy="384" r="13" fill="#7AA2FF" />
+  </g>
+  <g fill="#FFFFFF" fill-opacity="0.08">
+    <rect x="120" y="660" width="240" height="52" rx="16" />
+    <rect x="380" y="660" width="240" height="52" rx="16" />
+    <rect x="640" y="660" width="240" height="52" rx="16" />
+  </g>
+  <g fill="#FFFFFF" fill-opacity="0.5">
+    <rect x="146" y="680" width="90" height="12" rx="6" />
+    <rect x="406" y="680" width="110" height="12" rx="6" />
+    <rect x="666" y="680" width="76" height="12" rx="6" />
+  </g>
+</svg>

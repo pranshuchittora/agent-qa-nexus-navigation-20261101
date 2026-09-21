@@ -1,0 +1,58 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1024" />
+      <stop offset="1" stop-color="#05060A" />
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#7AA2FF" />
+      <stop offset="1" stop-color="#4FE3C1" />
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(300 180) rotate(50) scale(520)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7AA2FF" stop-opacity="0.55" />
+      <stop offset="1" stop-color="#7AA2FF" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="glow2" cx="0" cy="0" r="1" gradientTransform="translate(980 620) rotate(-140) scale(520)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B07CFF" stop-opacity="0.5" />
+      <stop offset="1" stop-color="#B07CFF" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="760" fill="url(#bg)" />
+  <rect width="1200" height="760" fill="url(#glow)" />
+  <rect width="1200" height="760" fill="url(#glow2)" />
+  <g opacity="0.5" stroke="#FFFFFF" stroke-opacity="0.1">
+    <rect x="80" y="90" width="320" height="196" rx="24" fill="#FFFFFF" fill-opacity="0.05" />
+    <rect x="440" y="90" width="320" height="196" rx="24" fill="#FFFFFF" fill-opacity="0.05" />
+    <rect x="800" y="90" width="320" height="196" rx="24" fill="#FFFFFF" fill-opacity="0.05" />
+    <rect x="80" y="320" width="320" height="196" rx="24" fill="#FFFFFF" fill-opacity="0.04" />
+    <rect x="440" y="320" width="320" height="196" rx="24" fill="#FFFFFF" fill-opacity="0.04" />
+    <rect x="800" y="320" width="320" height="196" rx="24" fill="#FFFFFF" fill-opacity="0.04" />
+  </g>
+  <g fill="url(#bar)">
+    <rect x="112" y="128" width="52" height="52" rx="16" />
+    <rect x="472" y="128" width="52" height="52" rx="16" fill-opacity="0.85" />
+    <rect x="832" y="128" width="52" height="52" rx="16" fill-opacity="0.7" />
+    <rect x="112" y="358" width="52" height="52" rx="16" fill-opacity="0.6" />
+    <rect x="472" y="358" width="52" height="52" rx="16" fill-opacity="0.45" />
+    <rect x="832" y="358" width="52" height="52" rx="16" fill-opacity="0.35" />
+  </g>
+  <g fill="#FFFFFF">
+    <rect x="112" y="208" width="152" height="12" rx="6" fill-opacity="0.5" />
+    <rect x="112" y="232" width="240" height="10" rx="5" fill-opacity="0.22" />
+    <rect x="472" y="208" width="132" height="12" rx="6" fill-opacity="0.45" />
+    <rect x="472" y="232" width="220" height="10" rx="5" fill-opacity="0.2" />
+    <rect x="832" y="208" width="168" height="12" rx="6" fill-opacity="0.4" />
+    <rect x="832" y="232" width="200" height="10" rx="5" fill-opacity="0.18" />
+    <rect x="112" y="438" width="140" height="12" rx="6" fill-opacity="0.3" />
+    <rect x="112" y="462" width="180" height="10" rx="5" fill-opacity="0.14" />
+    <rect x="472" y="438" width="160" height="12" rx="6" fill-opacity="0.26" />
+    <rect x="472" y="462" width="196" height="10" rx="5" fill-opacity="0.12" />
+    <rect x="832" y="438" width="120" height="12" rx="6" fill-opacity="0.22" />
+    <rect x="832" y="462" width="170" height="10" rx="5" fill-opacity="0.1" />
+  </g>
+  <rect x="80" y="560" width="1040" height="120" rx="26" fill="#FFFFFF" fill-opacity="0.045" stroke="#FFFFFF" stroke-opacity="0.09" />
+  <rect x="118" y="596" width="220" height="14" rx="7" fill="#FFFFFF" fill-opacity="0.45" />
+  <rect x="118" y="626" width="360" height="10" rx="5" fill="#FFFFFF" fill-opacity="0.2" />
+  <circle cx="1030" cy="620" r="34" fill="url(#bar)" />
+  <path d="M1017 620h26M1031 608l12 12-12 12" stroke="#05060A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
