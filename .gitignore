@@ -14,3 +14,6 @@ dist-ssr
 
 .vercel
 .env*
+
+# 本地备份/快照目录，不参与版本管理
+blackhole/
